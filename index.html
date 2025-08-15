@@ -1,180 +1,177 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Preda Code</title>
-  <link rel="stylesheet" href="./style.css">
-
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Preda Code Security Systems</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- BARRA FIJA -->
-<header class="topbar">
-  <div class="brand" onclick="navigateTo('#inicio')">
-    <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Logo"/>
-    <span>Preda Code Security Systems</span>
-  </div>
-  <nav class="nav">
-    <a href="#inicio" data-link>Inicio</a>
-    <a href="#nosotros" data-link>Nosotros</a>
-    <a href="#servicios" data-link>Servicios</a>
-    <a href="#ventas" data-link>Ventas</a>
-  </nav>
-</header>
+  <!-- BARRA FIJA -->
+  <header class="topbar">
+    <div class="brand" onclick="navigateTo('#inicio')">
+      <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Logo"/>
+      <span>Preda Code Security Systems</span>
+    </div>
+    <nav class="nav">
+      <a href="#inicio" data-link>Inicio</a>
+      <a href="#nosotros" data-link>Nosotros</a>
+      <a href="#servicios" data-link>Servicios</a>
+      <a href="#ventas" data-link>Ventas</a>
+    </nav>
+  </header>
 
-<!-- CONTENIDO PÁGINAS -->
-<main id="app">
-  <!-- INICIO -->
-  <section id="inicio" class="page activa" data-route="inicio">
-    <div class="hero">
-      <div class="text-content">
-        <h1>Preda Code Security Systems</h1>
+  <!-- CONTENIDO PÁGINAS -->
+  <main id="app">
+    <!-- INICIO -->
+    <section id="inicio" class="page activa" data-route="inicio">
+      <div class="hero">
+        <div class="text-content">
+          <h1>Preda Code Security Systems</h1>
+          <p>
+            Somos especialistas en seguridad electrónica y tecnológica. Integramos control de acceso,
+            asistencia, videovigilancia, redes y software a la medida para proteger y optimizar tus espacios.
+          </p>
+        </div>
+        <div class="logo-container">
+          <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Logo"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="page" data-route="nosotros">
+      <h1>Sobre Nosotros</h1>
+      <img class="imagen-seccion"
+           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=60"
+           alt="Equipo técnico"/>
+      <div class="contenedor-texto">
         <p>
-          Somos especialistas en seguridad electrónica y tecnológica. Integramos control de acceso,
-          asistencia, videovigilancia, redes y software a la medida para proteger y optimizar tus espacios.
+          En <strong>Preda Code</strong> unimos <em>ingeniería</em> y <em>servicio</em> para brindar soluciones de seguridad
+          que realmente funcionan.
         </p>
+        <ul class="bullets">
+          <li>CCTV IP, analítica de video y almacenamiento seguro.</li>
+          <li>Control de acceso, asistencia y credenciales.</li>
+          <li>Desarrollo web a medida y automatización de reportes.</li>
+          <li>Mantenimiento preventivo/correctivo y mesa de ayuda.</li>
+        </ul>
       </div>
-      <div class="logo-container">
-        <img src="https://i.postimg.cc/y8ySRvMQ/logo-zorro-mejorado-removebg-preview.png" alt="Logo"/>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="page" data-route="servicios">
+      <h1>Nuestros Servicios</h1>
+      <p class="subtitle">Innovación, calidad y compromiso en cada proyecto.</p>
+
+      <div class="cards">
+        <article class="card">
+          <img src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg"
+               alt="Mantenimiento"/>
+          <h3>Mantenimiento</h3>
+          <p>Preventivo y correctivo para cómputo, redes y CCTV con reportes.</p>
+          <button class="info-link" onclick="navigateTo('#detalle-mantenimiento')">Más información</button>
+        </article>
+
+        <article class="card">
+          <img src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg"
+               alt="Programación"/>
+          <h3>Programación</h3>
+          <p>Desarrollo web, dashboards y automatización de procesos.</p>
+          <button class="info-link" onclick="navigateTo('#detalle-programacion')">Más información</button>
+        </article>
+
+        <article class="card">
+          <img src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg"
+               alt="Instalación"/>
+          <h3>Instalación</h3>
+          <p>CCTV IP, control de acceso, alarmas y capacitación.</p>
+          <button class="info-link" onclick="navigateTo('#detalle-instalacion')">Más información</button>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/seed/ventas-cover/600/400" alt="Catálogo"/>
+          <h3>Ventas</h3>
+          <p>Equipos y accesorios de marcas confiables.</p>
+          <button class="info-link" onclick="navigateTo('#ventas')">Ver catálogo</button>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="page" data-route="nosotros">
-    <h1>Sobre Nosotros</h1>
-    <img class="imagen-seccion"
-         src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=60"
-         alt="Equipo técnico"/>
-    <div class="contenedor-texto">
-      <p>
-        En <strong>Preda Code</strong> unimos <em>ingeniería</em> y <em>servicio</em> para brindar soluciones de seguridad
-        que realmente funcionan. Diseñamos implementaciones robustas, escalables y fáciles de usar.
-      </p>
-      <ul class="bullets">
-        <li>CCTV IP, analítica de video y almacenamiento seguro.</li>
-        <li>Control de acceso, asistencia y credenciales.</li>
-        <li>Desarrollo web a medida y automatización de reportes.</li>
-        <li>Mantenimiento preventivo/correctivo y mesa de ayuda.</li>
-      </ul>
-    </div>
-  </section>
+    <!-- DETALLES -->
+    <section id="detalle-mantenimiento" class="page" data-route="detalle-mantenimiento">
+      <h2>Servicio de Mantenimiento</h2>
+      <img class="imagen-seccion"
+           src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg"
+           alt="Mantenimiento"/>
+      <div class="contenedor-texto">
+        <p>Cuidamos la salud de tu infraestructura para evitar paros y alargar la vida útil del equipo.</p>
+        <ul class="bullets">
+          <li>Diagnóstico, limpieza profunda y cambio de pasta térmica.</li>
+          <li>Planes mensuales/trimestrales con SLA.</li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="page" data-route="servicios">
-    <h1>Nuestros Servicios</h1>
-    <p class="subtitle">Innovación, calidad y compromiso en cada proyecto.</p>
+    <section id="detalle-programacion" class="page" data-route="detalle-programacion">
+      <h2>Servicio de Programación</h2>
+      <img class="imagen-seccion"
+           src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg"
+           alt="Programación"/>
+      <div class="contenedor-texto">
+        <p>Desarrollamos soluciones a medida que conectan tus equipos, tus datos y tu operación.</p>
+        <ul class="bullets">
+          <li>Sistemas web de asistencia y monitoreo.</li>
+          <li>Dashboards con indicadores y alertas.</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="cards">
-      <article class="card">
-        <img src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg"
-             alt="Mantenimiento"/>
-        <h3>Mantenimiento</h3>
-        <p>Preventivo y correctivo para cómputo, redes y CCTV con reportes.</p>
-        <button class="info-link" onclick="navigateTo('#detalle-mantenimiento')">Más información</button>
-      </article>
+    <section id="detalle-instalacion" class="page" data-route="detalle-instalacion">
+      <h2>Servicio de Instalación</h2>
+      <img class="imagen-seccion"
+           src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg"
+           alt="Instalación"/>
+      <div class="contenedor-texto">
+        <p>Implementación profesional de sistemas de seguridad con calidad de imagen y continuidad operativa.</p>
+        <ul class="bullets">
+          <li>Cámaras bala/domo, NVR/DVR, PoE y visión nocturna.</li>
+          <li>Videoporteros, cerraduras electrónicas y sensores.</li>
+        </ul>
+      </div>
+    </section>
 
-      <article class="card">
-        <img src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg"
-             alt="Programación"/>
-        <h3>Programación</h3>
-        <p>Desarrollo web, dashboards y automatización de procesos.</p>
-        <button class="info-link" onclick="navigateTo('#detalle-programacion')">Más información</button>
-      </article>
+    <!-- VENTAS / CATÁLOGO -->
+    <section id="ventas" class="page" data-route="ventas">
+      <h1>Catálogo de Ventas</h1>
+      <p class="subtitle">Asesoría y equipos de seguridad y cómputo con precios en quetzales.</p>
 
-      <article class="card">
-        <img src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg"
-             alt="Instalación"/>
-        <h3>Instalación</h3>
-        <p>CCTV IP, control de acceso, alarmas y capacitación.</p>
-        <button class="info-link" onclick="navigateTo('#detalle-instalacion')">Más información</button>
-      </article>
-
-      <article class="card">
-        <img src="https://picsum.photos/seed/ventas-cover/600/400" alt="Catálogo"/>
-        <h3>Ventas</h3>
-        <p>Equipos y accesorios de marcas confiables.</p>
-        <button class="info-link" onclick="navigateTo('#ventas')">Ver catálogo</button>
-      </article>
-    </div>
-  </section>
-
-  <!-- DETALLE MANTENIMIENTO -->
-  <section id="detalle-mantenimiento" class="page" data-route="detalle-mantenimiento">
-    <h2>Servicio de Mantenimiento</h2>
-    <img class="imagen-seccion"
-         src="https://i.postimg.cc/0NYV1YWS/tecnologia-pc-taller-reparacion-computadoras-ingeniero-realizando-mantenimiento-portatiles-desarroll.jpg"
-         alt="Mantenimiento"/>
-    <div class="contenedor-texto">
-      <p>Cuidamos la salud de tu infraestructura para evitar paros y alargar la vida útil del equipo.</p>
-      <ul class="bullets">
-        <li>Diagnóstico, limpieza profunda y cambio de pasta térmica.</li>
-        <li>Actualización de firmware/OS y endurecimiento básico.</li>
-        <li>Planes mensuales/trimestrales con SLA.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- DETALLE PROGRAMACIÓN -->
-  <section id="detalle-programacion" class="page" data-route="detalle-programacion">
-    <h2>Servicio de Programación</h2>
-    <img class="imagen-seccion"
-         src="https://i.postimg.cc/8cpPNgRS/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg"
-         alt="Programación"/>
-    <div class="contenedor-texto">
-      <p>Desarrollamos soluciones a medida que conectan tus equipos, tus datos y tu operación.</p>
-      <ul class="bullets">
-        <li>Sistemas web de asistencia y monitoreo.</li>
-        <li>Dashboards con indicadores y alertas.</li>
-        <li>Integración con biométricos y NVR/DVR.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- DETALLE INSTALACIÓN -->
-  <section id="detalle-instalacion" class="page" data-route="detalle-instalacion">
-    <h2>Servicio de Instalación</h2>
-    <img class="imagen-seccion"
-         src="https://i.postimg.cc/hG2V7NLx/camara-de-videovigilancia-900x600.jpg"
-         alt="Instalación"/>
-    <div class="contenedor-texto">
-      <p>Implementación profesional de sistemas de seguridad con calidad de imagen y continuidad operativa.</p>
-      <ul class="bullets">
-        <li>Cámaras bala/domo, NVR/DVR, PoE y visión nocturna.</li>
-        <li>Videoporteros, cerraduras electrónicas y sensores.</li>
-        <li>Capacitación, documentación y soporte post-instalación.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- VENTAS / CATÁLOGO -->
-  <section id="ventas" class="page" data-route="ventas">
-    <h1>Catálogo de Ventas</h1>
-    <p class="subtitle">Asesoría y equipos de seguridad y cómputo con precios en quetzales.</p>
-
-    <div class="grid">
-      <article class="card producto">
-        <img src="https://i.postimg.cc/Dwt0T06Y/COOPER-B1-A41.jpg" alt="Cámara Bullet"/>
-        <h3>Cámara Bullet 4MP</h3>
-        <p>IR 30 m • IP67 • H.265+</p>
-        <strong>Q 615</strong>
-      </article>
-     
-    <article class="card producto">
-      <img src="https://i.postimg.cc/9FWpdDjh/DS7108-HQHIK1-1.png" />
-      <h3>DVR 8 Canales H.265</h3>
-      <p>Compatibilidad TVI/CVI/AHD • 4K salida HDMI.</p>
-      <strong>Q 856</strong>
-    </article>
-
-    <article class="card producto">
-      <img src="https://i.postimg.cc/zBpTGk2P/images-5.jpg" />
-      <h3>NVR 16 Canales PoE</h3>
-      <p>PoE integrado • ONVIF • Smart Search.</p>
-      <strong>Q 1470</strong>
-    </article>
-
-    <article class="card producto">
+      <div class="grid">
+        <article class="card producto">
+          <img src="https://i.postimg.cc/Dwt0T06Y/COOPER-B1-A41.jpg" alt="Cámara Bullet"/>
+          <h3>Cámara Bullet 4MP</h3>
+          <p>IR 30 m • IP67 • H.265+</p>
+          <strong>Q 615</strong>
+        </article>
+        <article class="card producto">
+          <img src="https://i.postimg.cc/G23CwnW5/DS-2-CE56-D0-T-IRMF.png" alt="Cámara Domo"/>
+          <h3>Cámara Domo 1080p</h3>
+          <p>IR 20 m • 2.8 mm • Anti-vandálica</p>
+          <strong>Q 428</strong>
+        </article>
+        <article class="card producto">
+          <img src="https://i.postimg.cc/9FWpdDjh/DS7108-HQHIK1-1.png" alt="DVR 8 Canales"/>
+          <h3>DVR 8 Canales H.265</h3>
+          <p>TVI/CVI/AHD • 4K salida HDMI</p>
+          <strong>Q 856</strong>
+        </article>
+        <article class="card producto">
+          <img src="https://i.postimg.cc/zBpTGk2P/images-5.jpg" alt="NVR 16 Canales"/>
+          <h3>NVR 16 Canales PoE</h3>
+          <p>PoE integrado • ONVIF • Smart Search</p>
+          <strong>Q 1 470</strong>
+        </article>
+       <article class="card producto">
       <img src="https://i.postimg.cc/Kzh5D8xg/4-Balas-Dahua-stratega-1.png" />
       <h3>Kit CCTV 4 Cámaras</h3>
       <p>Incluye DVR, cables y fuente. Plug & Play.</p>
@@ -433,40 +430,28 @@
     </article>
 </section>
 </main>
+      </div>
+    </section>
+  </main>
 
-<footer class="footer">
-  © <span id="year"></span> Preda Code Security Systems — Innovación en Seguridad
-</footer>
-<!-- partial -->
-  <script  src="./script.js"></script>
+  <footer class="footer">
+    © <span id="year"></span> Preda Code Security Systems — Innovación en Seguridad
+  </footer>
 
-</body>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  © <span id="year"></span> Preda Code Security Systems — Innovación en Seguridad
-</footer>
-
-<script>
-/* Navegación SPA */
-function navigateTo(hash) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('activa'));
-  const target = document.querySelector(hash);
-  if (target) target.classList.add('activa');
-  history.pushState(null, null, hash);
-}
-document.addEventListener('click', e => {
-  if (e.target.matches('[data-link]')) {
-    e.preventDefault();
-    navigateTo(e.target.getAttribute('href'));
-  }
-});
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+  <script>
+    function navigateTo(hash) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('activa'));
+      const target = document.querySelector(hash);
+      if (target) target.classList.add('activa');
+      history.pushState(null, null, hash);
+    }
+    document.addEventListener('click', e => {
+      if (e.target.matches('[data-link]')) {
+        e.preventDefault();
+        navigateTo(e.target.getAttribute('href'));
+      }
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
